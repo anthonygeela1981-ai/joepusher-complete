@@ -1,10 +1,3 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'JoePusherPrivateVault',
-  description: 'Exclusive 4K Adult Content – Crypto Only',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -12,7 +5,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ backgroundColor: '#000', color: '#fff', margin: 0, minHeight: '100vh' }}>
+        {children}
+      </body>
     </html>
   )
 }
